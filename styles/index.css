@@ -67,6 +67,7 @@ header{
   display: flex;
   align-items: flex-start;
   margin-right: 1rem;
+  
 }
 
 .iniciar_sesion {
@@ -79,6 +80,10 @@ header{
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s;
+}
+
+.navloggin a{
+    margin:.7rem;
 }
 
 .iniciar_sesion:hover {

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/styles/loginstyle.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+</head>
+
+<body>
+    <div class="screen formulario">
+        <h1>Formulario</h1>
+        <form action="procesar_formulario" method="post">
+            <input type="text" id="nombre" name="nombre"  placeholder="Nombre">
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required> 
+            <input type="number" id="edad" name="edad" min="0" max="100" placeholder="Edad" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="Password" placeholder="Password" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>    
+</body>
+</html>
