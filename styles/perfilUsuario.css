@@ -1,0 +1,88 @@
+body{
+    
+background: #e1ebf0;
+background: linear-gradient(90deg, rgba(225, 235, 240, 1) 0%, rgba(201, 203, 212, 1) 30%, rgba(255, 255, 255, 1) 100%);
+  
+}
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 8rem;
+    background: #ed400c;
+    background: linear-gradient(90deg, rgba(237, 64, 12, 1) 0%, rgba(255, 197, 38, 1) 54%, rgba(255, 247, 173, 1) 100%);
+    margin-bottom: 5rem;
+    color: white;
+
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,select{
+    width: 60%;
+    margin-bottom: 1.5rem;
+     border: none;               
+    border-radius: 12px;        
+    padding: 8px;              
+    outline: none;               
+    background-color: #f5f5f5;   
+    font-size: 14px;  
+}
+
+
+/* Contenedor de toda la caja */
+.tag-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e0f0f8; /* gris azulado */
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de cada etiqueta */
+.tag {
+  padding: 10px 12px;
+  text-align: center;
+  border: 2px solid #888;
+  border-radius: 20px;
+  background-color: #878792;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  font-size: 14px;
+}
+
+/* Hover */
+.tag:hover {
+  background-color: #4537df;
+}
+
+/* Estado seleccionado */
+.tag.selected {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 4.5em;
+
+}

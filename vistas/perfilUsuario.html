@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Usuario</title>
+    <link rel="stylesheet" href="/styles/perfilUsuario.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+</head>
+<body>
+
+    <div class="encabezado">
+        <h1>Perfil de usuario</h1>
+    </div>
+
+    
+
+    <form action="#" class="formulario">
+        <fieldset>Intereses personales</fieldset>
+        
+        <label for="sexo">Sexo</label>
+        <select name="sexo" id="sexo">
+            <option value="hombre">hombre</option>
+            <option value="mujer">mujer</option>
+            <option value="otro">otro</option>
+        </select>
+
+        <label for="busqueda">Prefiero ver:</label>
+        <select name="orientacion" id="orientacion">
+            <option value="hombres">hombres</option>
+            <option value="mujeres">mujeres</option>
+            <option value="otros">otro</option>
+        </select>
+
+       <label for="distancia">Distancia máxima a la que quieres ver perfiles</label>
+        <div style="display: flex; align-items: center; gap: 10px;">
+        <input type="range" id="distancia" min="10" max="100" step="1" value="10" oninput="updateDistancia(this.value)">
+        <span id="distancia-valor">10 km</span>
+        </div>
+    </form>
+
+    <div class="tag-container">
+        <span class="tag">Entrenar</span>
+        <span class="tag">Vida nocturna</span>
+        <span class="tag">Vida diurna</span>
+        <span class="tag">Viajar</span>
+        <span class="tag">Trecking</span>
+        <span class="tag">Gastronomia</span>
+        <span class="tag">Leer</span>
+        <span class="tag">Cine</span>
+        <span class="tag">Mascotas</span>
+      
+    </div>
+
+    <footer class="footer">
+        <p>Tramy</p>
+        <p>2025</p>
+    </footer>
+    
+</body>
+<script src="/js/perfilUsuario.js"></script>
+
+</html>
