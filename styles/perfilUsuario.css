@@ -1,7 +1,10 @@
 body{
     
-background: #e1ebf0;
-background: linear-gradient(90deg, rgba(225, 235, 240, 1) 0%, rgba(201, 203, 212, 1) 30%, rgba(255, 255, 255, 1) 100%);
+background-image: url("/images/personaPerfil.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+color: white;
   
 }
 
@@ -12,7 +15,12 @@ background: linear-gradient(90deg, rgba(225, 235, 240, 1) 0%, rgba(201, 203, 212
     text-align: center;
     height: 8rem;
     background: #ed400c;
-    background: linear-gradient(90deg, rgba(237, 64, 12, 1) 0%, rgba(255, 197, 38, 1) 54%, rgba(255, 247, 173, 1) 100%);
+       background: linear-gradient(
+        90deg,
+        rgba(237, 64, 12, 0.8) 0%,        
+        rgba(255, 197, 38, 0.8) 54%,      
+        rgba(255, 247, 173, 0.8) 100%  
+    );
     margin-bottom: 5rem;
     color: white;
 
@@ -26,14 +34,27 @@ background: linear-gradient(90deg, rgba(225, 235, 240, 1) 0%, rgba(201, 203, 212
 }
 
 input,select{
-    width: 15%;
-    margin-bottom: 1.5rem;
-     border: none;               
-    border-radius: 12px;        
-    padding: 8px;              
-    outline: none;               
-    background-color: #f5f5f5;   
-    font-size: 14px;  
+    
+     display: block;
+  width:35%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+
+}
+
+.contenedor_distancia{
+display: flex; 
+justify-content: center;
+align-items: center; 
+gap: 10px;
+width:100%;
+}
+
+.distancia{
+  width: 100%;
 }
 
 
@@ -41,13 +62,15 @@ input,select{
 .tag-container {
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px;
-  background-color: #e0f0f8; /* gris azulado */
+  padding: 20px; 
+  background: rgba(255, 255, 255, 0.15);        
+  -webkit-backdrop-filter: blur(10px);  
   border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff; 
 }
 
 /* Estilo de cada etiqueta */
@@ -66,7 +89,7 @@ input,select{
 
 /* Hover */
 .tag:hover {
-  background-color: #4537df;
+  background-color: #e05b32;
 }
 
 /* Estado seleccionado */

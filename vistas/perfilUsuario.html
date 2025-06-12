@@ -16,7 +16,7 @@
     
 
     <form action="#" class="formulario">
-        <fieldset>Intereses personales</fieldset>
+       <legend>Intereses personales</legend>
         
         <label for="sexo">Sexo</label>
         <select name="sexo" id="sexo">
@@ -33,11 +33,12 @@
         </select>
 
        <label for="distancia">Distancia máxima a la que quieres ver perfiles</label>
-        <div style="display: flex; align-items: center; gap: 10px;">
-        <input type="range" id="distancia" min="10" max="100" step="1" value="10" oninput="updateDistancia(this.value)">
+        <div class="contenedor_distancia">
+        <input class="disstancia" type="range" id="distancia" min="10" max="100" step="1" value="10" oninput="updateDistancia(this.value)">
         <span id="distancia-valor">10 km</span>
         </div>
     </form>
+    </fieldset>
 
     <div class="tag-container">
         <span class="tag">Entrenar</span>
