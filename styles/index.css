@@ -102,3 +102,34 @@ section{
     background: linear-gradient(90deg, rgba(250, 218, 180, 1) 0%, rgba(245, 245, 245, 1) 82%);
     height: 100%;
 }
+
+/*--------------TESTIMONIOS DE USUARIOS--------------------------------------------------------*/
+
+    .testimonios {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .testimonio {
+      flex: 1 1 30rem;
+      max-width: 38rem;
+      max-height: 20rem;
+      border: 0.1rem solid #ddd;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      background-color: #f9f9f9;
+    }
+
+    blockquote {
+      font-style: italic;
+      margin: 0 0 10px 0;
+    }
+
+    figcaption {
+      text-align: right;
+      font-weight: bold;
+      color: #333;
+    }
